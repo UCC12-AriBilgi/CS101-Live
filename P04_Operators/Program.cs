@@ -10,7 +10,9 @@ internal class Program
 
         //Mantiksal.Main(args);
 
-        IslemliAtama.Main(args);
+        //IslemliAtama.Main(args);
+
+        Ternary.Main(args);
 
         Console.ReadKey();
     }

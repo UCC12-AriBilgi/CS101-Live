@@ -6,7 +6,11 @@ internal class Program
     {
         //Matematiksel.Main(args);
 
-        ArttirmaEksiltme.Main(args);
+        //ArttirmaEksiltme.Main(args);
+
+        //Mantiksal.Main(args);
+
+        IslemliAtama.Main(args);
 
         Console.ReadKey();
     }

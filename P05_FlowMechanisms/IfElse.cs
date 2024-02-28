@@ -79,35 +79,72 @@ namespace P05_FlowMechanisms
 
             #region Kullanıcı adı/şifre giriş kontrolu
             // ekrandan iki adet bilgi alıcam. kullanıcı adı ve şifre. 2 si birden kendi tanımladığım değerlerle aynıysa "Sisteme hoşgeldiniz" diye mesaj çıksın ekrana. değilse bana hangi bilginin uygun olmadığını söylesin...
-            string benimkad = "admin"; // benim tanımladığım kullanıcı adı
-            string benimsifre = "1234"; // şifre
+            //string benimkad = "admin"; // benim tanımladığım kullanıcı adı
+            //string benimsifre = "1234"; // şifre
 
-            string ekad; // ekrandan alınan kull adı
-            string esifre; // ekrandan alınan sifre
+            //string ekad; // ekrandan alınan kull adı
+            //string esifre; // ekrandan alınan sifre
 
-            Console.WriteLine("Kullanıcı Adı :");
-            ekad =Console.ReadLine(); // ekrandan okuyup değişgene yerlestirdi
+            //Console.WriteLine("Kullanıcı Adı :");
+            //ekad =Console.ReadLine(); // ekrandan okuyup değişgene yerlestirdi
 
-            Console.WriteLine("Kullanıcı Şifre :");
-            esifre = Console.ReadLine(); // ekrandan okuyup değişgene yerlestirdi
+            //Console.WriteLine("Kullanıcı Şifre :");
+            //esifre = Console.ReadLine(); // ekrandan okuyup değişgene yerlestirdi
 
-            if (ekad == benimkad)
+            //if (ekad == benimkad)
+            //{
+            //    if (esifre == benimsifre)
+            //    {
+            //        Console.WriteLine("Sisteme hoşgeldiniz..İyi çalışmalar...");
+
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Girilen bilgi doğru değil...Lütfen kontrol ediniz...");
+            //    }
+
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Girilen bilgi doğru değil...Lütfen kontrol ediniz...");
+            //}
+
+            #endregion
+
+            #region 2 sayıdan büyük olanı bulma, ekrandan girilecek olan sayılar var...
+            // readline string okuduğu için bunu sayıya cevirmek için .ToInt32() kullanabilirsiniz
+
+            int sayi1; // ekrandan alacağım bilgiyiyi tutacak
+            int sayi2; // "
+
+            Console.WriteLine("Lütfen 1.sayınızı giriniz : ");
+            sayi1=Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen 2.sayınızı giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            if (sayi1 > sayi2)
             {
-                if (esifre == benimsifre)
-                {
-                    Console.WriteLine("Sisteme hoşgeldiniz..İyi çalışmalar...");
-
-                }
-                else
-                {
-                    Console.WriteLine("Girilen bilgi doğru değil...Lütfen kontrol ediniz...");
-                }
+                Console.WriteLine("Evet sayi1 sayi2 den büyüktür....");
+            }
+            else if (sayi2 > sayi1) 
+            {
+                Console.WriteLine("Hayır sayi1 sayi2 den küçüktür....");
 
             }
             else
             {
-                Console.WriteLine("Girilen bilgi doğru değil...Lütfen kontrol ediniz...");
+                Console.WriteLine("İki sayı da birbirine eşittir...");
             }
+
+
+
+            #endregion
+
+            #region Daily Workout !
+            // 3 sayıdan büyük olanı bulma, ekrandan girilecek olan sayılar var...
+
+
 
             #endregion
 

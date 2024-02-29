@@ -74,28 +74,70 @@ namespace P05_FlowMechanisms
 
             #region switch_case 2
 
-            int deger = Convert.ToInt32(Console.ReadLine());
+            //int deger = Convert.ToInt32(Console.ReadLine());
 
-            switch (deger)
-            {
-                case 1:
-                    Console.WriteLine("Merhaba..");
-                    break;
-                case 2:
-                    string bilgi=Console.ReadLine();
+            //switch (deger)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Merhaba..");
+            //        break;
+            //    case 2:
+            //        string bilgi=Console.ReadLine();
 
-                    Console.WriteLine($"Girdiğiniz bilgi : {bilgi} dir..");
-                    break;
+            //        Console.WriteLine($"Girdiğiniz bilgi : {bilgi} dir..");
+            //        break;
 
-                default:
-                    break;
-            }
+            //    default:
+            //        break;
+            //}
 
+            #endregion
+
+            #region switch_case 3
+            // eğer bir case içersinde gerektiğinde baska bir case durumuna atlayabiliriz
+
+            //int deger = 5;
+
+            //switch (deger)
+            //{
+            //    case 4:
+            //        string k1=Console.ReadLine();
+
+            //        Console.WriteLine(k1);
+
+            //        break;
+            //    case 5:
+            //        Console.WriteLine("Şimdi case 4 e gideceksiniz...");
+            //        goto case 4;
+
+
+            //    default:
+            //        break;
+            //}
 
 
             #endregion
 
 
+            #region switch_case 4
+            // farklı değerlerin aynı case bloğunda kullanılması gerekebilir
+
+            int deger = Convert.ToInt32(Console.ReadLine());
+
+            switch (deger)
+            {
+                case 1:
+                case 2:
+                case 3:
+                    Console.WriteLine($"Girdiğiniz değer {deger} dir...");
+                    break;
+                default:
+
+                    break;
+            }
+
+
+            #endregion
 
             Console.ReadKey();
         }

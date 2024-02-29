@@ -4,10 +4,11 @@
     {
         static void Main(string[] args)
         {
-            IfElse.Main(args);
+            //IfElse.Main(args);
 
             //ForSimple.Main(args);
 
+            SwitchCase.Main(args);
 
             Console.ReadKey();
         }

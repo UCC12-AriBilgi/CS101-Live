@@ -8,7 +8,9 @@
 
             //ForSimple.Main(args);
 
-            SwitchCase.Main(args);
+            //SwitchCase.Main(args);
+
+            While.Main(args);
 
             Console.ReadKey();
         }

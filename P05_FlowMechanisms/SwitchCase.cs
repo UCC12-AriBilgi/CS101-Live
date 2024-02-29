@@ -27,55 +27,73 @@ namespace P05_FlowMechanisms
             //      break;
 
             #region switch_case 1
-            int deger;
+            //int deger;
 
-            // 1..10 arası bir değer girilecek
-            Console.WriteLine("Lütfen 1-10 arasında değeri giriniz...");
-            deger = Convert.ToInt32(Console.ReadLine());
+            //// 1..10 arası bir değer girilecek
+            //Console.WriteLine("Lütfen 1-10 arasında değeri giriniz...");
+            //deger = Convert.ToInt32(Console.ReadLine());
 
-            switch (deger) // Neye göre biryerlere atlayacağım
-            {
-                case 1:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 2:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 3:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 4:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 5:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 6:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 7:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 8:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 9:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                case 10:
-                    Console.WriteLine($"Girdiğiniz değer {deger}");
-                    break;
-                default:
-                    Console.WriteLine("İstenen aralıkta girin lütfen...");
-                    break;
+            //switch (deger) // Neye göre biryerlere atlayacağım
+            //{
+            //    case 1:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 5:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 6:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 7:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 8:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 9:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    case 10:
+            //        Console.WriteLine($"Girdiğiniz değer {deger}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("İstenen aralıkta girin lütfen...");
+            //        break;
+            //}
 
             #endregion
 
+            #region switch_case 2
 
+            int deger = Convert.ToInt32(Console.ReadLine());
 
+            switch (deger)
+            {
+                case 1:
+                    Console.WriteLine("Merhaba..");
+                    break;
+                case 2:
+                    string bilgi=Console.ReadLine();
+
+                    Console.WriteLine($"Girdiğiniz bilgi : {bilgi} dir..");
+                    break;
+
+                default:
+                    break;
             }
 
 
+
+            #endregion
 
 
 

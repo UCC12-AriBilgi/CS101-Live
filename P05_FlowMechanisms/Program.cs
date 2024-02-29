@@ -10,7 +10,11 @@
 
             //SwitchCase.Main(args);
 
-            While.Main(args);
+            //While.Main(args);
+
+            //DoWhile_Simple.Main(args);
+
+            DoWhile_Intermediate.Main(args);
 
             Console.ReadKey();
         }

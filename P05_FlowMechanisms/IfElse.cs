@@ -114,28 +114,28 @@ namespace P05_FlowMechanisms
             #region 2 sayıdan büyük olanı bulma, ekrandan girilecek olan sayılar var...
             // readline string okuduğu için bunu sayıya cevirmek için .ToInt32() kullanabilirsiniz
 
-            int sayi1; // ekrandan alacağım bilgiyiyi tutacak
-            int sayi2; // "
+            //int sayi1; // ekrandan alacağım bilgiyiyi tutacak
+            //int sayi2; // "
 
-            Console.WriteLine("Lütfen 1.sayınızı giriniz : ");
-            sayi1=Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen 1.sayınızı giriniz : ");
+            //sayi1=Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Lütfen 2.sayınızı giriniz : ");
-            sayi2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen 2.sayınızı giriniz : ");
+            //sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            if (sayi1 > sayi2)
-            {
-                Console.WriteLine("Evet sayi1 sayi2 den büyüktür....");
-            }
-            else if (sayi2 > sayi1) 
-            {
-                Console.WriteLine("Hayır sayi1 sayi2 den küçüktür....");
+            //if (sayi1 > sayi2)
+            //{
+            //    Console.WriteLine("Evet sayi1 sayi2 den büyüktür....");
+            //}
+            //else if (sayi2 > sayi1) 
+            //{
+            //    Console.WriteLine("Hayır sayi1 sayi2 den küçüktür....");
 
-            }
-            else
-            {
-                Console.WriteLine("İki sayı da birbirine eşittir...");
-            }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("İki sayı da birbirine eşittir...");
+            //}
 
 
 
@@ -143,8 +143,52 @@ namespace P05_FlowMechanisms
 
             #region Daily Workout !
             // 3 sayıdan büyük olanı bulma, ekrandan girilecek olan sayılar var...
+            int sayi1, sayi2, sayi3;
 
+            Console.WriteLine("Lütfen 1.sayınızı giriniz : ");
+            sayi1 = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Lütfen 2.sayınızı giriniz : ");
+            sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen 3.sayınızı giriniz : ");
+            sayi3 = Convert.ToInt32(Console.ReadLine());
+
+            if (sayi1 > sayi2)
+            {
+                if (sayi1 > sayi3)
+                {
+                    Console.WriteLine($"En büyük sayi1 dir...Değeri {sayi1}\n\n");
+                }
+            }
+
+            if (sayi2 > sayi1 && sayi2 > sayi3)
+            {
+                Console.WriteLine($"En büyük sayi2 dir...Değeri {sayi2}\n\n");
+            }
+
+            if ((sayi3 > sayi1) && (sayi3 > sayi2))
+            {
+                Console.WriteLine($"En büyük sayı3 tür...Değeri {sayi3}\n\n");
+            }
+
+            // Daily workout2 
+            // // 3 sayıdan küçük olanı bulma, ekrandan girilecek olan sayılar var...
+
+            if (sayi1 < sayi2 && sayi1 < sayi3)
+            {
+                Console.WriteLine($"En küçük sayi1 dir...Değeri {sayi1}\n\n");
+            }
+
+            if (sayi2 < sayi1 && sayi2 < sayi3)
+            {
+                Console.WriteLine($"En küçük sayi2 dir...Değeri {sayi2}\n\n");
+            }
+
+            if ((sayi3 < sayi1) && (sayi3 < sayi2))
+            {
+                Console.WriteLine($"En küçük sayı3 tür...Değeri {sayi3}\n\n");
+            }
 
             #endregion
 

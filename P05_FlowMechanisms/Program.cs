@@ -4,9 +4,9 @@
     {
         static void Main(string[] args)
         {
-            //IfElse.Main(args);
+            IfElse.Main(args);
 
-            ForSimple.Main(args);
+            //ForSimple.Main(args);
 
 
             Console.ReadKey();

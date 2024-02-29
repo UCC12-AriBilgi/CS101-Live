@@ -72,7 +72,59 @@ namespace P05_FlowMechanisms
             #endregion
 
 
-            #region
+            #region Kullanıcının girdiği 2 sayının çarpma işlemini toplama kullanarak bulunuz ve yazınız
+            //int sayi1, sayi2, sonuc;
+
+            //Console.WriteLine("Lütfen 1.sayı : ");
+            //sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            //Console.WriteLine("Lütfen 2.sayı : ");
+            //sayi2 = Convert.ToInt32(Console.ReadLine());
+
+
+            //sonuc = 0;
+
+            //for (int i = 0; i < sayi1; i++)
+            //{
+            //    sonuc = sonuc + sayi2;
+            //}
+
+            //Console.WriteLine("Çarpım sonucu - " + sonuc.ToString() + "\n");
+
+
+
+            #endregion
+
+            #region Kullanıcıdan 6 adet sayı alınacak.(-,+) Çıkışta istenen durum..
+            // negatiflerin toplamını ayrı
+            // pozitiflerin toplamını ayrı göstersin
+            // Örnek : Negatif sayıların toplamı = -24
+            //          Pozitif sayıların toplanmı = 55 
+
+            int sayi; // Ekrandan alınacak değer
+
+            int ptoplam=0; // Pozitiflerin toplamını tutacak
+            int ntoplam=0; // Negatiflerin     "
+
+            for (int sayac = 1; sayac <= 6; sayac++)
+            {
+                Console.WriteLine("Lütfen " + sayac.ToString() + ".sayınızı giriniz : ");
+                sayi =int.Parse(Console.ReadLine());
+
+                if (sayi > 0)
+                {
+                    ptoplam += sayi; // sayı pozitifse ptoplam a ekliyorum
+                }
+                else
+                {
+                    ntoplam += sayi; // sayı negatifse ntoplam a ekliyorum
+                }
+
+            }
+
+            Console.WriteLine($"Pozitif sayıların toplamı = {ptoplam} \n\n");
+            Console.WriteLine($"Negatif sayıların toplamı = {ntoplam} \n\n");
+
 
 
             #endregion

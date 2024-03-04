@@ -4,7 +4,9 @@
     {
         static void Main(string[] args)
         {
-            DiziGenel.Main(args);
+            //DiziGenel.Main(args);
+
+            DiziDongu.Main(args);
 
 
         }

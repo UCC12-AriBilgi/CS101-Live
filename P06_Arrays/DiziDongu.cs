@@ -10,7 +10,7 @@ namespace P06_Arrays
     {
         public static void Main(string[] args)
         {
-            #region for / foreach döngülerinin kullanımı
+            #region for / foreach döngülerinin kullanımı (Hack01)
             // Verilen bir tamsayı dizisinin elemanlarının toplamını
             // hem for hem de foreach döngülerini kullanarak ayrı ayrı geliştiriniz.
 
@@ -46,9 +46,36 @@ namespace P06_Arrays
             //...
             // şeklinde
 
+            // Hack02 ye ek..
+            // Bir de acaba pozitifden,negatiften,nötr den kacar tane var..Bunları da çıkışta görebilelim
+            // Pozitiflerin adedi : .... tane
+            // Negatiflerin adedi : .... tane
+            // Nötrlerin adedi : ... tane
+            // diye
+
             int[] sayilar = {4,5,-15,22,-34,3,0,43,100 };
 
             // foreach kullanın
+            foreach (int sayi in sayilar)
+            {
+                // gelen sayinın büyük 0 mı küçük 0 mı olduğunu anlamam lazım ki yanına hangi türden olduğunu yazabileyim.
+
+                if (sayi > 0)
+                {
+                    Console.WriteLine(sayi + "\tPozitifdir..");
+                }
+
+                else if (sayi < 0)
+                {
+                    Console.WriteLine(sayi + "\tNegatifdir..");
+
+                }
+                else
+                {
+                    Console.WriteLine(sayi + "\tNötrdür..");
+
+                }
+            }
 
 
             #endregion

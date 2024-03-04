@@ -30,7 +30,7 @@ namespace P06_Arrays
             int sayi2 = Convert.ToInt32(names[11]);
 
 
-            Console.WriteLine("Toplam {0}", sayi1 + sayi2);
+            Console.WriteLine("Toplam {0}", sayi1 + sayi2); 
 
 
 

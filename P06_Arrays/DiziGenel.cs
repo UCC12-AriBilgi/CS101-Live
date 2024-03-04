@@ -30,7 +30,21 @@ namespace P06_Arrays
             int sayi2 = Convert.ToInt32(names[11]);
 
 
-            Console.WriteLine("Toplam {0}", sayi1 + sayi2); 
+            Console.WriteLine("Toplam {0}", sayi1 + sayi2);
+
+            // Tanımlamalar Şöyle de olabilir
+            string[] sayilarAlfa = { "Bir", "İki", "Üç", "Dört" }; // daha tanımlanırken initial değerlerin belirlenmesi
+
+            int[] sayilar2 = { 1, 2, 3, 4, 5 };
+
+            float[] sayilar3 = { 2f, 1.2f, 7f };
+
+            // Fekat bu şekilde dizi tanımlamaları sadece dizi ilk tanımlarken yapabiliriz. Örneğin asağıdaki gibi bir kullanım hata verecektir.
+            //int[] sayilar4
+            //sayilar4= {5,7,89,98 };
+
+
+
 
 
 

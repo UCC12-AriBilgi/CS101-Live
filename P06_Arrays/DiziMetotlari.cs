@@ -84,6 +84,9 @@ namespace P06_Arrays
 
             Array sehirler = Array.CreateInstance(typeof(string), 8);
 
+            // Dikkat! CreateInstance yöntemiyle oluşturulan dizilere diziadi[4]=4 gibi bir yöntemle erişilemez.
+            // işte o zaman .SetValue metodu yoluyla halledilir...
+
             sehirler.SetValue("İstanbul", 0);
             sehirler.SetValue("Ankara", 1);
             sehirler.SetValue("İzmir", 2);
@@ -118,6 +121,40 @@ namespace P06_Arrays
             // hack
             // dizim bu sefer 10 elemanlı sayısal bir dizi olsun..eleman değerleri size ait...önce karışık,sonra artan sırada sonra da azalan sırada ekrana yazdırma..
 
+            Array sayilar = Array.CreateInstance(typeof(int), 10);
+
+            sayilar.SetValue(23, 0);
+            sayilar.SetValue(56, 1);
+            sayilar.SetValue(1, 2);
+            sayilar.SetValue(3, 3);
+            sayilar.SetValue(120, 4);
+            sayilar.SetValue(1000, 5);
+            sayilar.SetValue(44, 6);
+            sayilar.SetValue(87, 7);
+            sayilar.SetValue(871, 8);
+            sayilar.SetValue(8, 9);
+
+            Console.WriteLine("Sırasız halde dizi\n\n");
+
+            foreach (int sayi in sayilar)
+                Console.Write(sayi + " ");
+
+            Console.WriteLine("");
+
+            Console.WriteLine("Alfabetik Sıralı halde dizi (A-Z)\n\n");
+
+            Array.Sort(sayilar);
+
+            foreach (int sayi in sayilar)
+                Console.Write(sayi + " ");
+
+            Console.WriteLine("");
+            Console.WriteLine("Alfabetik Sıralı halde dizi (Z-A)\n\n");
+
+            Array.Reverse(sayilar);
+
+            foreach (int sayi in sayilar)
+                Console.Write(sayi + " ");
 
             #endregion
 

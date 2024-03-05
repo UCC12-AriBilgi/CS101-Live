@@ -6,9 +6,9 @@
         {
             //DiziGenel.Main(args);
 
-            DiziDongu.Main(args);
+            //DiziDongu.Main(args);
 
-            //DiziMetotlari.Main(args);
+            DiziMetotlari.Main(args);
 
 
         }

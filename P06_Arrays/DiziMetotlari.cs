@@ -41,7 +41,7 @@ namespace P06_Arrays
             // dizinin bütün elemanlarını teker teker ekrana yazdıran pp
 
             for (int i = 0; i < dizi16.GetLength(0); i++)
-                for (int j = 0; j < dizi16[j].GetLength(0); j++)
+                for (int j = 0; j < dizi16[i].GetLength(0); j++)
                     Console.WriteLine("dizi16[{0}][{1}]={2}", i, j, dizi16[i][j]);
 
 

@@ -91,50 +91,80 @@ namespace P06_Arrays
             //Kullanıcıdan alınan bir metin içindeki sesli harf sayısını bulan ve bulduklarını baska bir diziye yerlestiren p.parçacığını tasarlayınız.
 
             // Öncelike seslilerin olduğu bir dizi tanımı yapıyorum.
-            char[] sesliler = {'a','e','ı','i','o','ö','u','ü' };
+            //char[] sesliler = {'a','e','ı','i','o','ö','u','ü' };
 
-            // Bulacağım seslileri yerleştireceğim bir dizi
-            char[] hangileri = new char[20];
+            //// Bulacağım seslileri yerleştireceğim bir dizi
+            //char[] hangileri = new char[20];
 
 
-            string metin = ""; // ekrandan alacağım metin bilgisi
-            int hindex = 0; // hangileri dizisinin index bilgisini tutacak
-            int adet = 0; // bulduğum sesli harf adedini tutacak.
+            //string metin = ""; // ekrandan alacağım metin bilgisi
+            //int hindex = 0; // hangileri dizisinin index bilgisini tutacak
+            //int adet = 0; // bulduğum sesli harf adedini tutacak.
 
-            Console.WriteLine("Lütfen metni giriniz :");
-            metin = Console.ReadLine().ToLower();
-            // Büyük harf girse bile küçüğe çevirdim
+            //Console.WriteLine("Lütfen metni giriniz :");
+            //metin = Console.ReadLine().ToLower();
+            //// Büyük harf girse bile küçüğe çevirdim
 
-            // Not : aslında geriplanda metin bilgisi de bir dizi gibi algılabilir
+            //// Not : aslında geriplanda metin bilgisi de bir dizi gibi algılabilir
 
-            // sesliler diziyle işe başlayacağız.
-            // 1.for cevrimi sesliler dizisi üzerinde hareket edecek
-            for (int sesliindex = 0; sesliindex < sesliler.Length ; sesliindex++)
-            {
-                // 2.for çevrimi metin bilgisi için
-                // metinin basından sonuna kadar ilerlenicek
-                for (int metinindex = 0; metinindex < metin.Length; metinindex++)
-                {
-                    // eğer metin içindekiş bir karakter benim sesli içindeki karaktere uyuyor mu
-                    if (metin[metinindex] == sesliler[sesliindex])
-                    {
-                        // baska bir diziye tasıyayım.
-                        hangileri[hindex] = metin[metinindex];//bulduğum sesli harfin ne olduğunu metin[metinindex] ile bilebiliyorum.
-                        hindex++; // birsonraki eleman için
+            //// sesliler diziyle işe başlayacağız.
+            //// 1.for cevrimi sesliler dizisi üzerinde hareket edecek
+            //for (int sesliindex = 0; sesliindex < sesliler.Length ; sesliindex++)
+            //{
+            //    // 2.for çevrimi metin bilgisi için
+            //    // metinin basından sonuna kadar ilerlenicek
+            //    for (int metinindex = 0; metinindex < metin.Length; metinindex++)
+            //    {
+            //        // eğer metin içindekiş bir karakter benim sesli içindeki karaktere uyuyor mu
+            //        if (metin[metinindex] == sesliler[sesliindex])
+            //        {
+            //            // baska bir diziye tasıyayım.
+            //            hangileri[hindex] = metin[metinindex];//bulduğum sesli harfin ne olduğunu metin[metinindex] ile bilebiliyorum.
+            //            hindex++; // birsonraki eleman için
 
-                        adet++; // Bulduğum sesli harf adedini artırıyorum
-                    }
-                }
+            //            adet++; // Bulduğum sesli harf adedini artırıyorum
+            //        }
+            //    }
 
-                // İç içe for olayında en önce içteki for biter sonra dıştaki for a dönülür ve o biter
-            }
+            //    // İç içe for olayında en önce içteki for biter sonra dıştaki for a dönülür ve o biter
+            //}
 
-            Console.WriteLine($"Girmiş olduğunuz metinde {adet} adet sesli harf vardır\n\n");
-            Console.WriteLine(hangileri);
+            //Console.WriteLine($"Girmiş olduğunuz metinde {adet} adet sesli harf vardır\n\n");
+            //Console.WriteLine(hangileri);
 
             #endregion
 
+            #region Hack04
 
+            // Verilen {4,5,-54,-76,-98,3,0,212,-313} dizisi içersindeki çift sayıların hatta uğrasabilirseniz tek sayıların da kaçar adet olduğunu ekrana yazdıran pp yi geliştiriniz...
+            int[] sayilar = { 4, 5, 54, 76, 98, 3, 0, 212, 313 };
+            int ciftadet = 0; // cift sayı adedinin tutulduğu değişgen
+            int tekadet = 0; // tek sayılar için
+
+
+            // foreach kullanın
+            foreach (int sayi in sayilar)
+            {
+
+                if (sayi % 2 == 0) // mod işlemi uygulayarak kalanın kac olduğunu anlıyorum
+                {
+                    Console.WriteLine(sayi + "\tÇift sayı..");
+                    ciftadet++;
+                }
+                else
+                {
+                    Console.WriteLine(sayi + "\tTek sayı..");
+                    tekadet++;
+                }
+            }
+
+            Console.WriteLine($"Çift sayıların adedi : {ciftadet}");
+            Console.WriteLine($"Tek sayıların adedi : {tekadet}");
+
+
+
+
+            #endregion
 
             Console.ReadKey();
         }

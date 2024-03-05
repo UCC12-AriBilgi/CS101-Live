@@ -115,6 +115,10 @@ namespace P06_Arrays
             foreach (string sehir in sehirler)
                 Console.Write(sehir + " ");
 
+            // hack
+            // dizim bu sefer 10 elemanlı sayısal bir dizi olsun..eleman değerleri size ait...önce karışık,sonra artan sırada sonra da azalan sırada ekrana yazdırma..
+
+
             #endregion
 
 

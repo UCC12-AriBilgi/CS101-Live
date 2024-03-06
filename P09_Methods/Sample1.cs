@@ -81,7 +81,7 @@ namespace P09_Methods
         }
 
         #region Methodlar
-        // region 1
+        // region 1 geri yok prmsiz
         private static void Hesapla()
         {
             Console.WriteLine("Lütfen kısa kenarı giriniz :");
@@ -97,7 +97,7 @@ namespace P09_Methods
 
         }
 
-        // region 2
+        // region 2 geri yok prmli
         private static void Hesapla(int pkisakenar,int puzunkenar)
         {
             int alan=pkisakenar * puzunkenar;
@@ -105,7 +105,7 @@ namespace P09_Methods
             Console.WriteLine($"\nDikdörtgenin alanı = {alan}");
         }
 
-        // region 3
+        // region 3 geri var prmsiz
         private static int HesaplaPrmsiz()
         {
             // geriye değer döndüren metotlarda mutlaka return keyword ü olmalıdır
@@ -120,11 +120,19 @@ namespace P09_Methods
             return alan;
         }
 
-        private static int HesaplaPrmli(int kisak,int uzunk)
+        // region 4 geri var parametre var
+        private static int HesaplaPrmli(int kisak, int uzunk)
         {
             return kisak * uzunk;
         }
 
+        // region Hack02
+        private static int DortIslem(int psayi1,int psayi2,string psecek) 
+        {
+            // bütün iş burada dönecek
+
+            return 0;
+        }
         #endregion
     }
 }

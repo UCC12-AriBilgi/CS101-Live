@@ -34,9 +34,25 @@ namespace P09_Methods
 
             #region 3. Geriye değer döndüren parametre almayan metot
 
+            //int sonuc = HesaplaPrmsiz();
+
+            //Console.WriteLine($"\nDikdörtgenin alanı = {sonuc}");
+
             #endregion
 
+            #region 4. Geriye değer döndüren ve parametre alan metot
 
+            Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            int kk = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            int uk = Convert.ToInt32(Console.ReadLine());
+
+            //int sonuc1 = HesaplaPrmli(kk, uk);
+
+            Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
+
+            #endregion
 
 
 
@@ -66,6 +82,26 @@ namespace P09_Methods
             int alan=pkisakenar * puzunkenar;
             
             Console.WriteLine($"\nDikdörtgenin alanı = {alan}");
+        }
+
+        // region 3
+        private static int HesaplaPrmsiz()
+        {
+            // geriye değer döndüren metotlarda mutlaka return keyword ü olmalıdır
+            Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            int kk = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            int uk = Convert.ToInt32(Console.ReadLine());
+
+            int alan = kk * uk;
+
+            return alan;
+        }
+
+        private static int HesaplaPrmli(int kisak,int uzunk)
+        {
+            return kisak * uzunk;
         }
 
         #endregion

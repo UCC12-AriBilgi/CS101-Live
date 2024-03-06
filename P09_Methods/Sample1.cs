@@ -68,7 +68,9 @@ namespace P09_Methods
             Console.WriteLine("\nİşlem türü (+,-,*,/) giriniz :");
             string secenek = Console.ReadLine();
 
+            int sonuc=DortIslem(sayi1,sayi2,secenek);
 
+            Console.WriteLine($" Yapmak istediğiniz {secenek} işleminin sonucu {sonuc}");
 
             #endregion
 
@@ -127,11 +129,45 @@ namespace P09_Methods
         }
 
         // region Hack02
-        private static int DortIslem(int psayi1,int psayi2,string psecek) 
+        private static int DortIslem(int psayi1,int psayi2,string psecenek) 
         {
             // bütün iş burada dönecek
+            int sonuc=0;
 
-            return 0;
+            switch (psecenek)
+            {
+                case "+":
+                    sonuc=psayi1 + psayi2;
+                    break;
+
+                case "-":
+                    sonuc = psayi1 - psayi2;
+                    break;
+                case "*":
+                    sonuc= psayi1 * psayi2;
+                    break;
+
+                case "/":
+                    // ya sayi2 yi sıfır girerse
+                    try
+                    {
+                        sonuc = psayi1 / psayi2;
+                    }
+                    catch
+                    {
+                        Console.WriteLine("sayi2 değeri 0..düzgün değer giriniz .<çatık kaş>.");
+                        
+                    }
+
+                    break;
+
+                default:
+                    Console.WriteLine("Lütfen doğru işlem kodu giriniz...");
+                    break;
+
+            }
+
+            return sonuc;
         }
         #endregion
     }

@@ -22,13 +22,17 @@ namespace P09_Methods
             #region 2. Geriye değer döndürmeyen ama parametre alan metot
             // Kullanıcı girişi gibi işlemler burada...
             // hesap kitap metotda olacak ...dolayısıla buradan almış olduğum bilgileri parametre olarak metoda göndereceğim
-            Console.WriteLine("Lütfen kısa kenarı giriniz :");
-            int kk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            //int kk = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Lütfen uzun kenarı giriniz :");
-            int uk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            //int uk = Convert.ToInt32(Console.ReadLine());
 
-            Hesapla(kk, uk);
+            //Hesapla(kk, uk);
+
+            #endregion
+
+            #region 3. Geriye değer döndüren parametre almayan metot
 
             #endregion
 

@@ -10,7 +10,7 @@ namespace P09_Methods
     {
         public static void Main(string[] args)
         {
-            //Hack
+            // Nightly Workout
             // Erkeklerin 25 yıl, kadınların 20 yıl çalıştıktan sonra emekli olacağı varsayılan bir ortamda, ekrandan girilen cinsiyet ve sigorta prim gün sayısına göre kişinin emekliliğine ne kadar süresi kaldığını hesaplayan pp.
 
             // Bazı kabuller

@@ -42,17 +42,38 @@ namespace P09_Methods
 
             #region 4. Geriye değer döndüren ve parametre alan metot
 
-            Console.WriteLine("Lütfen kısa kenarı giriniz :");
-            int kk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen kısa kenarı giriniz :");
+            //int kk = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Lütfen uzun kenarı giriniz :");
-            int uk = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("Lütfen uzun kenarı giriniz :");
+            //int uk = Convert.ToInt32(Console.ReadLine());
 
-            //int sonuc1 = HesaplaPrmli(kk, uk);
+            ////int sonuc1 = HesaplaPrmli(kk, uk);
 
-            Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
+            //Console.WriteLine($"\nDikdörtgenin alanı = {HesaplaPrmli(kk, uk)}");
 
             #endregion
+
+            #region Hack02
+            //Uygun metot yapısına göre en uygun göreceğiniz yapıya göre
+            // ekrandan alınacak 2 sayı için 4(+,-,*,/) işlemi gerçekleştirecek pp
+            // Gerekiyorsa birden fazla metot da yazabilirsiniz.
+            // Hint : işlem tipi diye bir değişgende tutarak hangi işlemin istendiğini ve ona göre çalışmasını sağlayabilirsiniz..
+            Console.WriteLine("Lütfen 1.sayıyı giriniz :");
+            int sayi1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Lütfen 2.sayıyı giriniz :");
+            int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("\nİşlem türü (+,-,*,/) giriniz :");
+            string secenek = Console.ReadLine();
+
+
+
+            #endregion
+
+
+
 
 
 

@@ -22,10 +22,6 @@ namespace P09_Methods
             #endregion
 
 
-
-
-
-
             Console.ReadKey();
 
 

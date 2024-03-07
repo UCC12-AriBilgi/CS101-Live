@@ -16,7 +16,7 @@ namespace P09_Methods
             // Bazı kabuller
             // 1 yıl 360 gün
             // 1 ay 30 gün kabul edilsin
-            // Örnek : 1943 gün : 5 yıl 4 ay 23 gün
+            // Örnek : kalan 1943 gün : 5 yıl 4 ay 23 gün
             // Kadınlar için 7200 gün
             // Erkekler için 9000 gün kabulu
 
@@ -35,11 +35,13 @@ namespace P09_Methods
             Console.WriteLine("Lütfen prim gün sayınızı giriniz :");
             dayCount = Convert.ToInt32(Console.ReadLine());
 
-            int year = retirementCalc(gender, dayCount) / Year;
+            dayCount = retirementCalc(gender, dayCount); // sadece günü hesaplamak için
+
+            int year = dayCount / Year;
             dayCount %= Year;
 
-            int month= retirementCalc(gender,dayCount) / Month;
-            dayCount %= month;
+            int month= dayCount / Month;
+            dayCount %= Month;
 
             int day = dayCount;
 

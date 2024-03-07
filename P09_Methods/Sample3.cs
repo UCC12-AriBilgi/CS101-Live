@@ -35,7 +35,7 @@ namespace P09_Methods
             Console.WriteLine("Lütfen prim gün sayınızı giriniz :");
             dayCount = Convert.ToInt32(Console.ReadLine());
 
-            dayCount = retirementCalc(gender, dayCount); // sadece günü hesaplamak için
+            dayCount = retirementCalc(gender, dayCount); // sadece gün farkı hesaplamak için
 
             int year = dayCount / Year;
             dayCount %= Year;

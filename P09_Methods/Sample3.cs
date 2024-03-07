@@ -36,7 +36,7 @@ namespace P09_Methods
             dayCount = Convert.ToInt32(Console.ReadLine());
 
             int year = retirementCalc(gender, dayCount) / Year;
-            dayCount %= year;
+            dayCount %= Year;
 
             int month= retirementCalc(gender,dayCount) / Month;
             dayCount %= month;
